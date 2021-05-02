@@ -3,6 +3,10 @@
         "test": "mocha"
     },
     "dependencies": {
-        "chai": "^4.3.4"
+        "body-parser": "^1.19.0",
+        "chai": "^4.3.4",
+        "express": "^4.17.1",
+        "lowdb": "^1.0.0",
+        "uuid": "^8.3.2"
     }
 }
