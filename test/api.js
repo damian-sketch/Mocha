@@ -24,8 +24,14 @@ app.use(bodyParser.json());
 app.post('/add-task', function(req, res){
    var title = req.body.title;
    var id = uuidv4();
-   db.get('posts').push({ id, title }).write();
+   if (!title || title === undefined){
+     res.status(400).end()
+   }
+   else{
+    db.get('posts').push({ id, title }).write();
    return res.status(201).end();
+   }
+   
 });
 
 
@@ -48,8 +54,14 @@ app.get('/tasks', function(req, res){
 //Update a task
 app.put('/tasks/:id', function(req,res){
     var update = req.body.title;
-    db.get('posts').find({id : req.params.id}).assign({title : update}).write();
-    return res.status(200).end();
+    if (!update || update === undefined){
+      res.status(400).end()
+    }
+    else{
+      db.get('posts').find({id : req.params.id}).assign({title : update}).write();
+      return res.status(200).end();
+    }
+    
 })
 
 // Delete task
@@ -63,4 +75,4 @@ app.listen(3000, function() {
     console.log('API up and running');
   });
 
-
+module.exports = app;

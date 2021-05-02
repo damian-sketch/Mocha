@@ -8,5 +8,8 @@
         "express": "^4.17.1",
         "lowdb": "^1.0.0",
         "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "supertest": "^6.1.3"
     }
 }
