@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "mocha"
+        "test": "mocha --exit"
     },
     "dependencies": {
         "body-parser": "^1.19.0",

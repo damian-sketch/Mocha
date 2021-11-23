@@ -24,7 +24,7 @@ describe('Calculator', () => {
 		it('should multiply two numbers', () => {
 			expect(calculator.multiply(3, 2)).to.equal(6)
 			expect(calculator.multiply(-31, 32)).to.equal(-992)
-			expect(calculator.multiply(-5, -2)).to.equal(10)
+			expect(calculator.multiply(0, -2)).to.equal(0)
 		})
 	})
 
@@ -36,6 +36,9 @@ describe('Calculator', () => {
 		it('should return NaN if the denominator is zero', () => {
 			expect(calculator.divide(4, 0)).to.equal(undefined)
 			expect(calculator.divide(-15, 0)).to.equal(undefined)
+		})
+		it('should return 0 if the numerator is zero', () => {
+			expect(calculator.divide(0, 6)).to.equal(0)
 		})
 	})
 })

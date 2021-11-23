@@ -1,27 +1,15 @@
 {
   "posts": [
     {
-      "id": "cf5f4477-2781-4b31-8275-feac1d5f5e82",
+      "id": "4285ff5f-e1af-4d9d-ae80-e0b0d7e80e4f",
       "title": "API testing rocks!"
     },
     {
-      "id": "005bdb0b-d30a-409a-9da8-91eafc78b2d2",
+      "id": "01019ea3-5921-4dd7-9c57-f43d0f16f42a",
       "title": "API testing rocks!"
     },
     {
-      "id": "27e6520c-48ce-4232-b7b6-910905e4f5c1",
-      "title": "API testing rocks!"
-    },
-    {
-      "id": "fe646e86-aafe-4f60-81ef-b8abefddf2fe",
-      "title": "API testing rocks!"
-    },
-    {
-      "id": "6d57c339-d725-460c-8e83-4d18c1e933ee",
-      "title": "API testing rocks!"
-    },
-    {
-      "id": "da2a52b9-50fb-4955-b81b-be76784c0428",
+      "id": "e159bdbf-7fbc-4172-9a78-b38d7532797b",
       "title": "API testing rocks!"
     }
   ]
